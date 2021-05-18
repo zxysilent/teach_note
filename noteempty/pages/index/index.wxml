@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+    <!--写笔记-->
+    <view class='col'>
+        <view class='item add_box' bindtap="onAdd">
+            <image class="add_bg" src="../../images/add.png" style="width:120rpx;height:120rpx;"></image>
+        </view>
+        <!--没有笔记时的提示-->
+        <block wx:if="{{notes.length < 1}}">
+            <view class='tips'>
+                <view class='tips_box'>
+                    <image class='tips_icon' src="../../images/tips_icon.png" style="width:70rpx;height:70rpx;"></image>
+                </view>
+                <view class='tips_txt'>点此添加新记事本</view>
+            </view>
+        </block>
+    </view>
+    <!--笔记列表-->
+    <block wx:for="{{notes}}" wx:key="id">
+        <view class="col">
+            <view class='item notepad {{item.class}}' data-id="{{item.id}}" bindtap="onEdit">
+                <view class='content'>
+                    <view class='txt'>{{item.title}}</view>
+                </view>
+                <view class='bottom'>
+                    <view class='txt'>
+                        {{item.ctime}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

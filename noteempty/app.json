@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/feedback/index",
+    "pages/edit/index",
+    "pages/create/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff9b6e",
+    "navigationBarTitleText": "笔记小应用",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#efeff4",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#b3b3b3",
+    "selectedColor": "#fc8e5d",
+    "backgroundColor": "#f5f5f7",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "笔记",
+        "iconPath": "images/icon1.png",
+        "selectedIconPath": "images/sicon1.png"
+      },
+      {
+        "pagePath": "pages/feedback/index",
+        "text": "反馈",
+        "iconPath": "images/icon2.png",
+        "selectedIconPath": "images/sicon2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
