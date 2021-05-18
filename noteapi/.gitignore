@@ -1,0 +1,9 @@
+docs/*
+dist/*
+logs/*
+backs/*
+static/dist/*
+static/upload/*
+noteapi
+*.exe
+*.exe~

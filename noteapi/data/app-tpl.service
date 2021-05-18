@@ -1,0 +1,15 @@
+[Unit]
+Description=Salary Server Service
+After=network.target
+
+[Service]
+Type=simple
+User=zxysilent
+WorkingDirectory=/home/zxysilent/app/
+RestartSec=5s
+Restart= always
+ExecStop=/usr/bin/killall salary
+ExecStart=/home/zxysilent/app/appname
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,23 @@
+
+title = "noteapi"
+intro = "教学api"
+mode = "dev"
+addr = ":8085"
+srv = "http://127.0.0.1:8085"
+
+
+# db
+#推荐cpu核心数
+db_idle = 4
+#推荐cpu核心数*2
+db_open = 8
+
+# 作者
+[author]
+name = "zxysilent"
+website = "https://github.com/zxysilent"
+
+# 微信
+[wechat]
+appid = "appid"
+secret = "secret"

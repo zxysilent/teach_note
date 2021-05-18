@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<form bindsubmit="onSubmit">
+    <view class="container">
+        <view class='title'>
+            <input name="title" placeholder-class="placeholder" placeholder="在此输入标题" value="{{form.title}}" />
+        </view>
+        <view class='row'>
+            <textarea class='text' placeholder-class="placeholder" name="content" focus="{{focus}}"
+                value="{{form.content}}" placeholder="点击添加文本" />
+            </view>
+    <view class='date placeholder'>
+        {{ item.update_date }}
+    </view>
+    <view class='bottom'>
+         <button formType="submit" class='btn success'>保存</button>
+        <button class='btn del' bindtap="onDrop">删除</button>
+    </view>
+</view>
+</form>
