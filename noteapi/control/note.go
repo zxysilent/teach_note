@@ -46,7 +46,7 @@ func NoteAll(ctx echo.Context) error {
 // @Param token query string true "凭证"
 // @Param body body model.Note true "请求数据"
 // @Success 200 {object} model.Reply "返回数据"
-// @Router /adm/note/add [post]
+// @Router /api/note/add [post]
 func NoteAdd(ctx echo.Context) error {
 	ipt := &model.Note{}
 	err := ctx.Bind(ipt)
@@ -68,7 +68,7 @@ func NoteAdd(ctx echo.Context) error {
 // @Param token query string true "凭证"
 // @Param body body model.Note true "请求数据"
 // @Success 200 {object} model.Reply "返回数据"
-// @Router /adm/note/edit [post]
+// @Router /api/note/edit [post]
 func NoteEdit(ctx echo.Context) error {
 	ipt := &model.Note{}
 	err := ctx.Bind(ipt)
@@ -89,7 +89,7 @@ func NoteEdit(ctx echo.Context) error {
 // @Param body body model.IptId true "请求数据"
 // @Param token query string true "凭证"
 // @Success 200 {object} model.Reply "返回数据"
-// @Router /adm/note/drop [post]
+// @Router /api/note/drop [post]
 func NoteDrop(ctx echo.Context) error {
 	ipt := &model.IptId{}
 	err := ctx.Bind(ipt)

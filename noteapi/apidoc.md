@@ -6,66 +6,6 @@
 
 ## Version: 1.0
 
-### /adm/note/add
-
-#### POST
-##### Summary
-
-添加笔记
-
-##### Parameters
-
-| Name | Located in | Description | Required | Schema |
-| ---- | ---------- | ----------- | -------- | ---- |
-| token | query | 凭证 | Yes | string |
-| body | body | 请求数据 | Yes | [model.Note](#modelnote) |
-
-##### Responses
-
-| Code | Description | Schema |
-| ---- | ----------- | ------ |
-| 200 | 返回数据 | [model.Reply](#modelreply) |
-
-### /adm/note/drop
-
-#### POST
-##### Summary
-
-删除笔记
-
-##### Parameters
-
-| Name | Located in | Description | Required | Schema |
-| ---- | ---------- | ----------- | -------- | ---- |
-| body | body | 请求数据 | Yes | [model.IptId](#modeliptid) |
-| token | query | 凭证 | Yes | string |
-
-##### Responses
-
-| Code | Description | Schema |
-| ---- | ----------- | ------ |
-| 200 | 返回数据 | [model.Reply](#modelreply) |
-
-### /adm/note/edit
-
-#### POST
-##### Summary
-
-修改笔记
-
-##### Parameters
-
-| Name | Located in | Description | Required | Schema |
-| ---- | ---------- | ----------- | -------- | ---- |
-| token | query | 凭证 | Yes | string |
-| body | body | 请求数据 | Yes | [model.Note](#modelnote) |
-
-##### Responses
-
-| Code | Description | Schema |
-| ---- | ----------- | ------ |
-| 200 | 返回数据 | [model.Reply](#modelreply) |
-
 ### /api/feedback/add
 
 #### POST
@@ -98,6 +38,26 @@
 | ---- | ----------- | ------ |
 | 200 | 返回数据 | [model.Reply](#modelreply) & object |
 
+### /api/note/add
+
+#### POST
+##### Summary
+
+添加笔记
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ---- |
+| token | query | 凭证 | Yes | string |
+| body | body | 请求数据 | Yes | [model.Note](#modelnote) |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | 返回数据 | [model.Reply](#modelreply) |
+
 ### /api/note/all
 
 #### GET
@@ -110,6 +70,46 @@
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | 200 | 返回数据 | [model.Reply](#modelreply) & object |
+
+### /api/note/drop
+
+#### POST
+##### Summary
+
+删除笔记
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ---- |
+| body | body | 请求数据 | Yes | [model.IptId](#modeliptid) |
+| token | query | 凭证 | Yes | string |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | 返回数据 | [model.Reply](#modelreply) |
+
+### /api/note/edit
+
+#### POST
+##### Summary
+
+修改笔记
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ---- |
+| token | query | 凭证 | Yes | string |
+| body | body | 请求数据 | Yes | [model.Note](#modelnote) |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | 返回数据 | [model.Reply](#modelreply) |
 
 ### /api/note/get
 
